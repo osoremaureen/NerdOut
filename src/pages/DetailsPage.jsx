@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { styles } from '../styles';
 
-const API_KEY = '37bc12cc2f38ac3da9847d8b729e3ae6';
+const API_KEY = process.env.REACT_APP_TMDB_API_KEY;
 const IMG_BASE_URL = 'https://image.tmdb.org/t/p/w500';
 
 const DetailsPage = ({ media, onClose, isInWatchlist, toggleWatchlist, addToWatched, handleUpdateEpisode, episodeProgress }) => {
